@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: "Roboto", sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #222;
 }
 /* Link Styles */
 
@@ -67,39 +67,40 @@ header {
 }
 header .profile-image {
   margin-top: 50px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
+  width: 125px;
+  height: 125px;
+  border-radius: 20%;
+  border: 3px solid #ee7e5d;
   transition: all 0.5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(360deg);
 }
 .tag {
-  background-color: #efefef;
-  color: black;
+  background-color: #00000075;
+  color: #ee7e5d;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 }
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: #00000075;
+  color: #ee7e5d;
+  font-weight: 500;
 }
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
+  background: #cacdd9;
+  border: 5px solid #222222;
+  border-radius: 10px;
   transition: all 0.5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #ee7e5d;
 }
 
 ul.skills {
@@ -110,14 +111,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #ee7e5d;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #222222;
 }
 
 footer {
@@ -148,20 +149,16 @@ a.social {
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  opacity: 0.4;
   transition: all 0.5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
-a.linkedin {
-  background-image: url(images/linkedin.svg);
+a.instagram {
+  background-image: url(images/instagram.png);
 }
 a.github {
-  background-image: url(images/github.svg);
+  background-image: url(images/github.png);
 }
 a.social:hover {
-  opacity: 1;
+  transform: scale(1.5) rotate(360deg);
 }
 .clearfix {
   clear: both;
