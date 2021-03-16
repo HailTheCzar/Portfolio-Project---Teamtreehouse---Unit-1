@@ -18,9 +18,29 @@ a {
   color: #999;
 }
 a:hover {
-  color: #6633ff;
+  color: #ee7e5d;
 }
-
+#woodrow {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+#woodrow:hover {
+  font-weight: 500;
+}
+#gravity {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+#gravity:hover {
+  font-weight: 500;
+}
+#amgem {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+#amgem:hover {
+  font-weight: 500;
+}
 /* Section Styles */
 
 .main-nav {
@@ -43,7 +63,10 @@ a:hover {
 .nav .name {
   display: block;
   margin-right: auto;
-  color: white;
+  color: #fdfdfd;
+}
+.name:hover {
+  color: #ee7e5d;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -52,10 +75,10 @@ a:hover {
   transition: all 0.5s;
 }
 .nav a:hover {
-  color: white;
+  color: #ee7e5d;
 }
 
-header {
+.main-header {
   text-align: center;
   background: url("/images/Philadelphia_Skyline.jpg") no-repeat top center;
   background-size: 1000px;
@@ -76,6 +99,13 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.2) rotate(360deg);
 }
+.music-header {
+  text-align: center;
+  background-size: 1000px;
+  overflow: hidden;
+  padding-top: 60px;
+  color: #cacdd9;
+}
 .tag {
   background-color: #00000075;
   color: #ee7e5d;
@@ -95,12 +125,25 @@ header .profile-image:hover {
   max-width: 500px;
   text-align: left;
   background: #cacdd9;
-  border: 5px solid #222222;
+  border: 5px solid #222;
   border-radius: 10px;
   transition: all 0.5s;
 }
 .card:hover {
   border-color: #ee7e5d;
+}
+.music-card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #cacdd9;
+  border: 10px solid #222;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.music-card:hover {
+  border-color: #000;
 }
 
 ul.skills {
@@ -117,8 +160,18 @@ ul.skills {
   margin: 2px;
 }
 
+.skills li:hover {
+  border: 2px solid #222;
+  color: #222;
+}
+
 .skills li:nth-child(odd) {
-  background: #222222;
+  background: #222;
+}
+
+.skills li:hover:nth-child(odd) {
+  border: 2px solid #ee7e5d;
+  color: #ee7e5d;
 }
 
 footer {
@@ -128,6 +181,7 @@ footer {
 }
 
 footer .copyright {
+  color: #ee7e5d;
   top: -8px;
   font-size: 0.75em;
 }
